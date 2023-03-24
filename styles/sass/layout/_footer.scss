@@ -1,0 +1,17 @@
+/* padding en los iconos del footer */
+.icon-footer-left {
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+}
+
+.icon-footer-rigth {
+  font-size: 25px;
+  padding: 10px 0 10px 10px;
+}
+
+/* Disposicion hacia el final de los iconos de la derecha del footer */
+.flex-rigth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

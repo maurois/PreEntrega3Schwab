@@ -1,0 +1,48 @@
+h1 {
+  
+  //tamano de la letra del titulo
+  font-size: 60px;
+
+  &::before {
+    // Para definir el tamanio y posicion de la montania con el sol
+    font-weight: 700;
+    font-size: 53px;
+    font-family: "Font Awesome 5 Free";
+    vertical-align: text-top;
+    content: "\e52f  ";
+    padding-bottom: 0;
+  }
+
+  &:hover {
+
+    &::after {
+
+      // hombrecito de rojo que aparece en el titulo
+      font-family: "Font Awesome 5 Free";
+      font-weight: 700;
+      font-size: 34px;
+      vertical-align: middle;
+      content: " \f6ec";
+      color: $rojo;
+
+      animation-name: opacityOn;
+      animation-duration: 1000ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+
+      @keyframes opacityOn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.brand {
+  padding: 30px 0 30px 0;
+}

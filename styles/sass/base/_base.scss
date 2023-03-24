@@ -1,0 +1,11 @@
+/* Setteo del color general de la fuente */
+* {
+  color: $color_verde;
+}
+
+p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-right: solid 1px $color_bien_claro;
+  border-bottom: solid 1px $color_bien_claro;
+}

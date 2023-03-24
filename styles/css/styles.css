@@ -1,0 +1,92 @@
+/* base styling */
+/* Setteo del color general de la fuente */
+* {
+  color: rgb(18, 45, 18);
+}
+
+p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-right: solid 1px #dee2e6;
+  border-bottom: solid 1px #dee2e6;
+}
+
+/* index.html styles */
+/* links styles */
+/* links sin subrayado y en color verde */
+a {
+  color: rgb(18, 45, 18);
+  text-decoration: none;
+}
+
+/* h1 styles */
+h1 {
+  font-size: 60px;
+}
+h1::before {
+  font-weight: 700;
+  font-size: 53px;
+  font-family: "Font Awesome 5 Free";
+  vertical-align: text-top;
+  content: "\e52f  ";
+  padding-bottom: 0;
+}
+h1:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 34px;
+  vertical-align: middle;
+  content: " \f6ec";
+  color: rgb(185, 7, 7);
+  animation-name: opacityOn;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes opacityOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brand {
+  padding: 30px 0 30px 0;
+}
+
+.img {
+  height: 100%;
+  padding: 12px;
+  border: solid 1px #dee2e6;
+  box-shadow: 10px 10px 25px 0 rgba(29, 29, 29, 0.15);
+}
+
+/* navigation styles */
+nav ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* footer styles */
+/* padding en los iconos del footer */
+.icon-footer-left {
+  font-size: 25px;
+  padding: 10px 0 10px 0;
+}
+
+.icon-footer-rigth {
+  font-size: 25px;
+  padding: 10px 0 10px 10px;
+}
+
+/* Disposicion hacia el final de los iconos de la derecha del footer */
+.flex-rigth {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

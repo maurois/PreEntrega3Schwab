@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1cc39e7fb8.js" crossorigin="anonymous"></script>
+
+  <!-- css bootstrap 5.3 -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+  <!-- css customized -->
+  <link rel="stylesheet" href="../styles/css/styles.css">
+
+  <title>Pre Entrega 2 Schwab</title>
+</head>
+
+<body>
+  <!-- Contenedor general de la pagina - La pagina cuenta con tres filas, encabezado, cuerpo (nav y formulario) y footer-->
+  <div class="container">
+
+    <!-- Encabezado - Marca - Primer fila-->
+    <header class="row brand">
+      <h1 class="col-12"><a href="../index.html">Montaña</a></h1>
+    </header>
+
+    <!-- Segunda fila -->
+    <div class="row">
+
+      <!-- Navegacion -->
+      <nav class="col-12 col-md-2">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./el-camino.html">El camino</a></li>
+          <li><a href="./el-equipaje.html">El equipaje</a></li>
+          <li><a href="./grupo-de-amigos.html">Grupo de amigos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contenido, formulario de contacto -->
+      <div class="col-12 col-md-10">
+        <form action="" method="post">
+          <label for="nombre" class="form-label">Nombre y Apellido</label>
+          <br>
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido aquí"
+            class="form-control">
+          <br>
+          <label for="email" class="form-label">Email</label>
+          <br>
+          <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico aquí"
+            class="form-control">
+          <br>
+          <label for="mensaje" class="form-label">Dejenos un mensaje</label><br>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Su mensaje aquí"
+            class="form-control"></textarea>
+          <br>
+          <button type="submit" class="btn btn-success">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Tercer fila - Footer -->
+    <footer class="row">
+      <div class="col-1 col-md-1">
+        <i class="fa-solid fa-person-hiking icon-footer-left"></i>
+      </div>
+      <div class="flex-rigth col-11 col-md-11">
+        <a href="https://www.instagram.com/gmaurois/" target="_blank"><i
+            class="fa-brands fa-instagram icon-footer-rigth"></i></a>
+        <a href="https://www.facebook.com/mauro.schwab.0" target="_blank"> <i
+            class="fa-brands fa-facebook icon-footer-rigth"></i></a>
+        <a href="mailto:mauroschwab@gmail.com"><i class="fa-solid fa-envelope icon-footer-rigth"></i></a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Script para bootstrap -->
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div>
+</body>
+
+</html>
