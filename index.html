@@ -8,6 +8,9 @@
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/1cc39e7fb8.js" crossorigin="anonymous"></script>
+  
+  <!-- css aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- css bootstrap 5.3 -->
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
@@ -42,7 +45,7 @@
       </nav>
 
       <!-- Contenido, Imagen y descipcion -->
-      <img class="img col-12 col-xl-5 mb-5" src="./images/mountain-lake.jpg" alt="" alt="mountain-lake">
+      <img data-aos="fade-up" class="img col-12 col-xl-5 mb-5" src="./images/mountain-lake.jpg" alt="" alt="mountain-lake">
       <div class="texto col-12 col-xl-5 px-xl-5">
         <h2>Ir a la montaña</h2>
         <p>La montaña es una de las experiencias que más difruto. Me gusta mucho caminar e ir conociendo lugares nuevos,
@@ -76,9 +79,16 @@
     </footer>
 
   </div>
+  
+  <!-- Script aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Script para bootstrap -->
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

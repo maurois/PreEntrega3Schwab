@@ -8,6 +8,9 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/1cc39e7fb8.js" crossorigin="anonymous"></script>
 
+  <!-- css aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- css bootstrap 5.3 -->
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
@@ -41,7 +44,7 @@
       </nav>
 
       <!-- Contenido, Imagen y descipcion -->
-      <img class="img col-12 col-xl-5 mb-5" src="../images/mochila.jpg" alt="" alt="mochila">
+      <img data-aos="fade-up" class="img col-12 col-xl-5 mb-5" src="../images/mochila.jpg" alt="" alt="mochila">
       <div class="texto col-12 col-xl-5 px-xl-5">
         <h2>La mochila y zapatillas</h2>
         <p>El equipaje hay que prepararlo desde temprano, antes de salir de viaje. Ya tener pensado que vas a necesitar, que momentos se van a presentar para saber que tener a mano o no tanto. A veces las cosas son dificil de encontrar en la mochila.
@@ -67,8 +70,15 @@
 
   </div>
 
+  <!-- Script aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- Script para bootstrap -->
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
