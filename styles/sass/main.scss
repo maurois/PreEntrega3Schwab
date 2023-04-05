@@ -14,7 +14,7 @@
 /* h1 styles */ 
 @import "./components/main-title";
 
-
+/* images styles */ 
 @import "./components/images";
 
 /* navigation styles */
@@ -22,3 +22,7 @@
 
 /* footer styles */
 @import "./layout/footer";
+
+.sin-borde {
+  border: none;
+}

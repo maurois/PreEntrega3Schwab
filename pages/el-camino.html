@@ -4,9 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="description" content="ir a la montaña mountain">
+  <meta name="title" content="La Montaña">
+
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/1cc39e7fb8.js" crossorigin="anonymous"></script>
+
+  <!-- css aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- css bootstrap 5.3 -->
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
@@ -14,7 +19,7 @@
   <!-- css customized -->
   <link rel="stylesheet" href="../styles/css/styles.css">
 
-  <title>Pre Entrega 2 Schwab</title>
+  <title>El camino</title>
 </head>
 
 <body>
@@ -29,19 +34,28 @@
     <!-- Segunda fila -->
     <div class="row">
 
-      <!-- Navegacion -->
-      <nav class="col-12 col-md-2">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./el-camino.html">El camino</a></li>
-          <li><a href="./el-equipaje.html">El equipaje</a></li>
-          <li><a href="./grupo-de-amigos.html">Grupo de amigos</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <!-- Navegacion -->
+    <div class="col-12 col-xl-2 mb-sm-3">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid px-0">
+          <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="./el-camino.html">El camino</a></li>
+              <li class="nav-item"><a class="nav-link" href="./el-equipaje.html">El equipaje</a></li>
+              <li class="nav-item"><a class="nav-link" href="./grupo-de-amigos.html">Grupo de amigos</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
+    </div>
 
       <!-- Contenido, Imagen y descipcion -->
-      <img class="img col-12 col-xl-5 mb-5" src="../images/the-way.jpg" alt="" alt="the-way">
+      <img data-aos="fade-up" class="img col-12 col-xl-5 mb-5" src="../images/the-way.jpg" alt="the-way">
       <div class="texto col-12 col-xl-5 px-xl-5">
         <h2>Caminando</h2>
         <p>Lo agradable de caminar en la montaña. Es tremenda la sensación cuando se está caminando en altura y ver el paisaje desde arriba.
@@ -68,8 +82,15 @@
 
   </div>
 
+  <!-- Script aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <!-- Script para bootstrap -->
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
